@@ -1,0 +1,128 @@
+/*Haif Albarakaty -- 2210433*/
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; 
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: #ffffff;
+    color: #333;
+    border-radius: 8px 8px 0 0;
+}
+
+header img.profile-img {
+    width: 100px; /* تعديل حجم الصورة */
+    height: 100px;
+    border-radius: 50%; /* لجعل الصورة دائرية */
+    margin-right: 20px; /* المسافة بين الصورة والنص */
+}
+
+header .header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8em; /* حجم مناسب لاسمك */
+}
+
+header h2 {
+    margin: 5px 0;
+    font-size: 1.2em; /* حجم مناسب للتخصص */
+}
+
+
+
+/* Sections */
+section {
+    margin: 20px 0;
+    padding: 15px;
+    border-left: 4px solid #000000;
+    background: #ffffff; 
+    border-radius: 5px;
+}
+
+section h2 {
+    color: #000000;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #000000; 
+    padding-bottom: 5px;
+}
+
+/* Skills Section */
+.skills-container {
+    display: flex; 
+    justify-content: space-between; 
+    margin-top: 20px;
+}
+
+.technical-skills, .soft-skills {
+    background: #ffffff; 
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+    width: 48%; 
+}
+
+.technical-skills h3, .soft-skills h3 {
+    color: #000000;
+    border-bottom: none; 
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.skills-container ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.skills-container ul li {
+    padding: 5px 0;
+    padding-left: 25px;
+    position: relative;
+}
+
+/* Adding checkmark icon next to each skill */
+.skills-container ul li::before {
+    content: " ■ "; 
+    position: absolute;
+    left: 0;
+    color: #000000;
+    font-weight: bold;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 15px;
+    background: #ffffff; 
+    color: #333; 
+    border-radius: 0 0 8px 8px;
+    margin-top: 20px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .skills-container {
+        flex-direction: column;
+    }
+}
